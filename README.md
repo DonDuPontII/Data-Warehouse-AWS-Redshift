@@ -37,9 +37,3 @@
 - After creating a Redshift cluster that aligns with the provided dwh.cfg parameters, one can execute:
     1. create_tables.py
     2. etl.py
-
-
-### Question for the reviewer
-1. Since Redshift doesn't support the conflict constraints taught previously, is there any equivalent functionality available as opposed to massagin the data sets to fit the expeced parameters?
-2. May I have some clarification around the purpose of the LOG_JSONPATH parameter in dwh.cfg? As a recommendation, I would include context in the instructions to avoid further confusion going forward. 
-3. The main function in both create_tables.py and etl.py are very similar except for calling functions to their respective scripts. Is it best practice to keep the design this way or would it be better to consolidate once all pieces are functioning as expected?
